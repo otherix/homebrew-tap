@@ -5,21 +5,21 @@
 class Otherix < Formula
   desc "Otherix operator CLI."
   homepage "https://github.com/otherix/otherix"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/otherix/otherix/releases/download/v0.1.0/otherix_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ef9535309e78638f7b200b63694772fc7b4448348806e7526d9062b677e2a40c"
+      url "https://github.com/otherix/otherix/releases/download/v0.2.0/otherix_0.2.0_darwin_amd64.tar.gz"
+      sha256 "cf0b9b24ef9283db62ab03a5cabbbb8bc6151b77baf3e9418ae4821908107d54"
 
       define_method(:install) do
         bin.install "otherix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/otherix/otherix/releases/download/v0.1.0/otherix_0.1.0_darwin_arm64.tar.gz"
-      sha256 "fbd284685ce685f1a9b8fa6533158101a05334a64588789a58c6b4a89a05af48"
+      url "https://github.com/otherix/otherix/releases/download/v0.2.0/otherix_0.2.0_darwin_arm64.tar.gz"
+      sha256 "29bfe9ecba9f6363a5573ac783dce357522ebb6a42b5bd659aa5e55b59f50f25"
 
       define_method(:install) do
         bin.install "otherix"
@@ -29,15 +29,15 @@ class Otherix < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/otherix/otherix/releases/download/v0.1.0/otherix_0.1.0_linux_amd64.tar.gz"
-      sha256 "4a2c6f2d3e59e2d04236508f7e6c4b3c67f6b33854986c61015e30339cb5ae28"
+      url "https://github.com/otherix/otherix/releases/download/v0.2.0/otherix_0.2.0_linux_amd64.tar.gz"
+      sha256 "7cb6b2b2b43cdc620145b3ca8e9f795a2266e7a1a277778248ef2830676032dc"
       define_method(:install) do
         bin.install "otherix"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/otherix/otherix/releases/download/v0.1.0/otherix_0.1.0_linux_arm64.tar.gz"
-      sha256 "163235b820f1b537b051243acdbb42f77c96630d0386685d60fb877e8488394c"
+      url "https://github.com/otherix/otherix/releases/download/v0.2.0/otherix_0.2.0_linux_arm64.tar.gz"
+      sha256 "1103b52a9581c9726827ef46a19b53c499dc67972b0bb34aafe8aa5d27e5c572"
       define_method(:install) do
         bin.install "otherix"
       end
