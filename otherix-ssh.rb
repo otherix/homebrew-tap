@@ -5,21 +5,21 @@
 class OtherixSsh < Formula
   desc "Otherix external SSH connector for granted VMs."
   homepage "https://github.com/otherix/otherix"
-  version "0.3.2"
+  version "0.3.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/otherix/otherix/releases/download/v0.3.2/otherix-ssh_0.3.2_darwin_amd64.tar.gz"
-      sha256 "92aa011551071f59b538417026358f5731fcc483d0a895c5a9d93e9a92c617b5"
+      url "https://github.com/otherix/otherix/releases/download/v0.3.3/otherix-ssh_0.3.3_darwin_amd64.tar.gz"
+      sha256 "2ecf81452c01d190b51fa8b59d848994fe35f78c92b3b979b72aef871d6ffd55"
 
       define_method(:install) do
         bin.install "otherix-ssh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/otherix/otherix/releases/download/v0.3.2/otherix-ssh_0.3.2_darwin_arm64.tar.gz"
-      sha256 "c4aa0b9c65f424f4a15491dc35878736c296cd32f15a537da7cd01ae0c81b579"
+      url "https://github.com/otherix/otherix/releases/download/v0.3.3/otherix-ssh_0.3.3_darwin_arm64.tar.gz"
+      sha256 "7d4d1d544d4e405a9a9c15c57788225c1d92aad3c324974d43ddddca17b69b50"
 
       define_method(:install) do
         bin.install "otherix-ssh"
@@ -29,15 +29,15 @@ class OtherixSsh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/otherix/otherix/releases/download/v0.3.2/otherix-ssh_0.3.2_linux_amd64.tar.gz"
-      sha256 "22ef700a7c6f70da0483dbccb501516567b9e8d9db5715e504b494a3c818eb9c"
+      url "https://github.com/otherix/otherix/releases/download/v0.3.3/otherix-ssh_0.3.3_linux_amd64.tar.gz"
+      sha256 "10d5d0c283028c0359e352260bd05dc8088157055e99fb7cb40458ebd85aa137"
       define_method(:install) do
         bin.install "otherix-ssh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/otherix/otherix/releases/download/v0.3.2/otherix-ssh_0.3.2_linux_arm64.tar.gz"
-      sha256 "340b0fcdcb65e0d835bc60f95afbfe2938e92005468d89574cd74ceb471f1553"
+      url "https://github.com/otherix/otherix/releases/download/v0.3.3/otherix-ssh_0.3.3_linux_arm64.tar.gz"
+      sha256 "d9ad7edabf010f9905be875e9553ca713faf38c5e5fe76fc1cb4c83e18a57ff7"
       define_method(:install) do
         bin.install "otherix-ssh"
       end
